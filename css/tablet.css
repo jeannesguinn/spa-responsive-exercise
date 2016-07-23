@@ -1,0 +1,80 @@
+@media only screen and (min-width: 600px) {
+/*-----BODY -----*/
+	body {}
+
+
+
+/*-----CONTAINER -----*/
+	#container {}
+
+
+
+/*-----HEADER -----*/
+
+	header img{
+		width: auto;
+	}
+
+	/*-----DECORATIVE BAR-------*/
+
+	div.decorativeWrapper{
+		display: block;
+		background-color: salmon;
+	}
+	div.decorativeWrapper div.left{
+		height: .9em;
+		width: 25%;
+		background-color: grey;
+	}
+
+/*-----NAVigation -----*/
+
+	/*--hide phone nav on tablet --*/
+	button#showPhoneNav{
+		display: none;
+	}
+	nav{
+		width: 25%;
+		float: left;
+	}
+	nav ul{
+		display: block!important; /*we need the important here so that the js won't override */
+		padding: 0;
+		margin: 0;
+		border-radius: 0;
+		box-shadow: none;
+	}
+	nav ul li a{
+		display: block;
+		text-decoration: none;
+		border-top: 1px solid rgba(255, 255, 255, 0.2);
+		border-bottom: 1px solid rgba(0, 0, 0, 0.8);
+		color: rgba(255, 255, 255, 0.8);
+
+		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#3f3f3f+0,3f3f3f+100&1+0,0.3+100 */
+		background: -moz-linear-gradient(top,  rgba(63,63,63,1) 0%, rgba(63,63,63,0.3) 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(top,  rgba(63,63,63,1) 0%,rgba(63,63,63,0.3) 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to bottom,  rgba(63,63,63,1) 0%,rgba(63,63,63,0.3) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3f3f3f', endColorstr='#4d3f3f3f',GradientType=0 ); /* IE6-9 */
+
+	}
+	nav ul li a:hover{
+		background: salmon;
+	}
+	nav ul li.selected a{
+		color: black;
+	}
+
+
+
+/*-----CONTENT -----*/
+  	#content{
+			margin-left: 25%;
+			min-height: 30em;
+		}
+
+
+/*----- FOOTER -----*/
+
+
+}

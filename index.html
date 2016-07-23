@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+
+<title>Responsive Craft Site</title>
+
+<!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+<!-- LOAD THE LATEST VERSION OF JQUERY-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+<script src="/js/hideMenu.js"></script>
+
+<!-- LOAD GOOGLE FONTS -->
+
+<link href="https://fonts.googleapis.com/css?family=Dosis|Noto+Sans" rel="stylesheet">
+
+
+<!--- STYLE SHEETS ----->
+<link href="css/normalize.css" rel="stylesheet">
+<!-- phone-default -->
+<link href="css/phone-default.css" rel="stylesheet">
+<!-- enhance-tablet -->
+<link href="css/tablet.css" rel="stylesheet">
+<!-- enhance-desktop -->
+<link href="css/desktop.css" rel="stylesheet">
+
+
+<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+<![endif]-->
+
+</head>
+<body>
+<div id="container">
+
+	<header>
+        <img src="/images/JGLogoHeader.png" alt="Header Logo" />
+    </header>
+
+    <!-- Main Structure of Pattern-->
+    <div class="decorativeWrapper"><!-- the big wrapper-->
+        <div class="left">
+            <div class="middle">
+                <!--Just for Decoration-->
+            </div><!--end of middle-->
+        </div><!--end of left-->
+    </div><!-- end of decorativeWrapper-->
+    <!-- End of Main Structure Pattern-->
+
+    <div class="navWrapper"><!-- the big wrapper-->
+        <div class="left">
+            <div class="middle"><!--where our nav appears-->
+                <!-- page navigation links here -->
+                <nav>
+                <button id="showPhoneNav" type="button">Show Navigation</button>
+                <ul id='myNav'>
+                	<li><a href="#">Sewing</a></li>
+                	<li class="selected"><a href="#">Crafts</a></li>
+                	<li><a href="#">Paint</a></li>
+                    <li><a href="#">Wood</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                </nav>
+            </div><!--end of middle-->
+        </div><!--end of left-->
+    </div><!-- end of navWrapper-->
+
+    <div class="contentWrapper"><!-- the big wrapper-->
+        <div class="left">
+            <div class="middle"><!--where our main content appears-->
+                <!-- page content here -->
+                <div id="content">
+                    <h1>Page Name</h1>
+                    <p>Content for this page.</p>
+                </div><!-- end content -->
+            </div><!--end of middle-->
+        </div><!--end of left-->
+    </div><!-- end of contentWrapper-->
+
+    <div class="footerWrapper"><!-- the big wrapper-->
+        <div class="left">
+            <div class="middle"><!--where our footer appears-->
+                <footer>
+                    <p>&copy; Paul Cheney &bull; Responsive Start File</p>
+                </footer>
+            </div><!--end of middle-->
+        </div><!--end of left-->
+    </div><!-- end of footerWrapper-->
+
+    </div> <!-- end container -->
+</body>
+</html>
