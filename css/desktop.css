@@ -4,6 +4,9 @@
 
 /*-----WRAPPER -----*/
 	#wrapper {}
+	div.decorativeWrapper{
+		display: none;
+	}
 
 /*-----CONTAINER -----*/
 	#container {
@@ -15,14 +18,79 @@
 
 
 /*-----NAVIGATION -----*/
-
+	div.navWrapper{
+		background-color: mediumTurquoise; /*becomes the right color*/
+	}
+	div.navWrapper div.left{
+		width: 91.66%;
+		background-color: grey; /*becomes the left color*/
+	}
+	div.navWrapper div.middle{
+		margin-left: 18.1818%;
+	}
+	nav{
+		width: 100%;
+		float: none;
+		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#3f3f3f+0,3f3f3f+100&1+0,0.3+100 */
+		background: -moz-linear-gradient(top,  rgba(63,63,63,1) 0%, rgba(63,63,63,0.3) 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(top,  rgba(63,63,63,1) 0%,rgba(63,63,63,0.3) 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to bottom,  rgba(63,63,63,1) 0%,rgba(63,63,63,0.3) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3f3f3f', endColorstr='#4d3f3f3f',GradientType=0 ); /* IE6-9 */
+	}
+	nav ul{
+		background-color: transparent;
+		border: none;
+		margin-left: 2%;
+	}
+	nav ul li{
+		float: left;
+		border-right: solid 1px rgba(0, 0, 0, 0.7);
+		border-left: solid 1px rgba(255, 255, 255, 0.1);
+	}
+	nav ul li a{
+		background: none;
+		border: none;
+	}
 
 
 /*-----CONTENT -----*/
+	div.contentWrapper{
+		background-color: mediumTurquoise; /*right*/
+	}
+	div.contentWrapper div.left{
+		width: 91.66%;
+		background-color: #717171; /*left*/
+	}
+	div.contentWrapper div.middle{
+		margin-left: 18.1818%;
+		background-color: mediumTurquoise; /*middle*/
+	}
+	#content{
+		margin-left: 0;
+	}
 
-
+/*------- IMAGES ---------*/
+	figure.w50 img{
+		width: 50%;
+	}
 
 /*----- FOOTER -----*/
+div.footerWrapper{
+	background-color: #717171; /*right*/
+}
+div.footerWrapper div.left{
+	width: 91.66%;
+	background-color: #717171; /*left*/
+}
+div.footerWrapper div.middle{
+	margin-left: 18.1818%;
+	background-color: #717171; /*middle*/
+}
 
+/* ------ COLUMNS -----*/
+div.row article.col33{
+	width: 33.333%;
+	float: left;
+}
 
 }

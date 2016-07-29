@@ -102,12 +102,91 @@ nav ul li a:hover {
 	min-height: 5em;
 	background-color: #e6e6e6;
 }
+#content h1{
+	font-size: 1.5em;
+	font-weight: 600;
+	color: mediumTurquoise;
+	padding-top: 1.4em;
+	border-bottom: 2px solid mediumTurquoise;
+}
+#content h2{
+	font-size: 1.3em;
+	font-weight: 600;
+	color: salmon;
+	padding-top: 1.1em;
+}
+#content h3{
+	font-size: 1.1em;
+	color: salmon;
+	padding-top: .8em;
+}
+#content p{
+	color: #333;
+	padding-top: .5em;
+	line-height: 130%;
+}
+#content a{
+	color: salmon;
+}
+#content article{
+	padding: .5em 2%;
+}
+#content strong{
+	font-weight: 600;
+}
+#content ul li{
+	margin-left: 6%;
+	padding-bottom: .3em;
+	font-size: .9em;
+	list-style-type: square;
+	color: #444;
+	line-height: 120%;
+}
 
-
+/*------- IMAGES ---------*/
+figure.w50 img{
+	width: 100%;
+}
+figure.w50{
+	background-color: #fff;
+	width: 100%;
+	border: 1px solid #999;
+	box-shadow: 2px 2px 5px rgba(63, 63, 63, 0.5);
+	margin-top: .5em;
+}
+figcaption{
+	text-align: center;
+	font-size: .7em;
+	padding: .3em;
+}
+figure.right{
+	float: right;
+}
 
 /*----- FOOTER -----*/
 footer {
 	clear: both;
 	text-align: center;
 	padding: 1em;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#3f3f3f+0,3f3f3f+100&1+0,0.3+100 */
+	background: -moz-linear-gradient(top,  rgba(63,63,63,1) 0%, rgba(63,63,63,0.3) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  rgba(63,63,63,1) 0%,rgba(63,63,63,0.3) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  rgba(63,63,63,1) 0%,rgba(63,63,63,0.3) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3f3f3f', endColorstr='#4d3f3f3f',GradientType=0 ); /* IE6-9 */
+}
+footer p{
+	color: mediumTurquoise;
+	padding: .8em;
+	text-align: center;
+	font-size: .6em;
+}
+footer a{
+	color: mediumTurquoise;
+}
+
+/*-- CLEAR FIX ---*/
+.clearfix:after{
+	content:"";
+	display: table;
+	clear: both;
 }

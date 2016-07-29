@@ -73,8 +73,19 @@
 			min-height: 30em;
 		}
 
+/*------- IMAGES ---------*/
+	figure.w50 img{
+		width: 70%;
+		margin-left: 2%;
+	}
+
 
 /*----- FOOTER -----*/
-
+	div.footerWrapper{
+		background-color: salmon;
+	}
+	div.footerWrapper div.middle{
+		margin-left: 25%;
+	}
 
 }
